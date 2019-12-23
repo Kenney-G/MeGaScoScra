@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-
+require_relative '../lib/metagascra/gcli'
 require "bundler/setup"
 require "metagascra"
 
@@ -10,5 +10,6 @@ require "metagascra"
 # require "pry"
 # Pry.start
 
-require "irb"
-IRB.start(__FILE__)
+#require "irb"
+#IRB.start(__FILE__)
+Gcli.new.start

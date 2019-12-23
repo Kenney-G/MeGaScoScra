@@ -1,0 +1,8 @@
+
+D
+ruby:S1481".Remove this unused "unf_games" local variable.(Έ·›®
+I
+ruby:S1481$".Remove this unused "title_Sec" local variable.(±χ’‹ύÿÿÿÿ
+D
+ruby:S1481%".Remove this unused "score_sec" local variable.(ρϋώδ
+‰	ruby:S117$"oRename this local variable to match the regular expression "^(@{0,2}[\da-z_]+[!?=]?)|([*+-/%=!><~]+)|(\[]=?)$".(±χ’‹ύÿÿÿÿ

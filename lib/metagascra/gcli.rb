@@ -1,36 +1,47 @@
-#require 'Gscrape.rb'
 require "pry"
 require "tty-prompt"
-
-@@user_selection = []
+require_relative "Gscrape"
+require_relative "../../lib/metagascra/game"
 
 class Gcli
   attr_accessor :title, :score
-  def initialize(intro)
+
+  def start
+    @game = Gscrape.scrape
+    prompt = TTY::Prompt.new
+    prompt.say("Hi! Thanks for checking out my gem. Please choose from the following options to get started:")
+    @user_selection = prompt.select("Select from the following", %w[random all exit])
+    menu_switch
   end
-  prompt = TTY::Prompt.new
-  intro = prompt.say("Hi! Thanks for checking out my gem. Please choose from the following options to get started:")
 
-  user_selection = prompt.select("Select from the following", %w(title random all exit))
+  def display_games
+    games = Game.all
+    games.each.with_index(1) { |g, i| puts "#{i}. #{g.title}" }
+    input = gets.chomp.to_i
+    if input.between?(1, Game.all.size)
+      game = Game.all[input - 1]
+      puts game.title
+    else
+      display_games
+    end
+  end
 
+  def menu_switch
+    case @user_selection
+      when "all"
+        display_games
+    when "random"
+      rand_games
+    when "exit"
+      puts "quit"
+    end
+    end
 
-  #if choice == title
-  #title_return_method
-  #elsif user_choice = random
-  # random_method
-  #elsif user_choice = all
-  # all_method
-  #elsif user_choice = exit
-  #exit_method
-  #else
-  # "Sorry, I didn't understand that selection." user_choice
-  #end
-
+  def rand_games
+    game = Game.all.sample
+    puts game.title
+  end
 
   def exit_method
-
   end
-
-
 end
-
