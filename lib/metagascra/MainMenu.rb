@@ -7,19 +7,47 @@ class MainMenu
   def initialize
     #noinspection RubyClassVariableUsageInspection
     @@prompt = TTY::Prompt.new
-    user_selection = @@prompt.select('What would you like to do?', %w[all random exit])
+    @user_selection = @@prompt.select('What would you like to do? Please select from the following: ', %w[all random
+exit])
+  end
 
-    case user_selection
+  def menu_switch
+    case @user_selection
     when "all"
-      puts "all_games"
+      display_games
     when "random"
-      puts "random_game"
+      rand_games
+    when "exit"
+      puts "quit"
     else
       exit
     end
   end
 
-end
+    def display_games
+      games = Game.all
+      games.each.with_index(1) { |g, i| puts "#{i}. #{g.title}" }
+      input = gets.chomp.to_i
+        if input.between?(1, Game.all.size)
+          game = Game.all[input - 1]
+          puts game.title
+        else
+          display_games
+        end
+    end
+
+    def rand_games
+      game = Game.all.sample
+      puts game.title
+    end
+
+    def exit_method
+      puts 'quit'
+    end
+  end
+
+
+
 
 #def self.all_games
   #{code_for_all_games}
