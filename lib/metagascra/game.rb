@@ -1,15 +1,16 @@
-# require ''
-# require ''
+require_relative '../../lib/metagascra/Gcli'
+require_relative 'Gcli'
+require_relative 'Gscrape'
 
-#noinspection ALL
+#noinspection RubyClassVariableUsageInspection
 class Game
   attr_accessor :title, :system, :link
   @@games = []
 
   def initialize(title, system, link)
-    @title = title
-    @link = link
-    @system = system
+    @@title = title
+    @@link = link
+    @@system = system
     save
   end
 
@@ -20,13 +21,4 @@ class Game
   def self.all
     @@games
   end
-
-  def menu_switch
-    if intro?
-      MainMenu
-    else
-      intro
-    end
-  end
-
 end

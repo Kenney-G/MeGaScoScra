@@ -8,17 +8,12 @@
             <set />
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/Gemfile.lock">
-          <value>
-            <set />
-          </value>
-        </entry>
-        <entry key="$PROJECT_DIR$/README.md">
-          <value>
-            <set />
-          </value>
-        </entry>
         <entry key="$PROJECT_DIR$/bin/console">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/metagascra/Gcli.rb">
           <value>
             <set />
           </value>
@@ -29,6 +24,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/lib/metagascra/MainMenu.rb">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/metagascra/compare.rb">
           <value>
             <set />
           </value>
@@ -49,6 +49,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/lib/metagascra/menu_functions.rb">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/test/metagascra_test.rb">
           <value>
             <set />
           </value>

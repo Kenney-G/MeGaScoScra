@@ -19,5 +19,13 @@ F
 Gemfile,d\e\de3150c01c3a946a6168173c4116741379fe3579
 ;
 bin/console,2\b\2b22d59fcdaf24a6d2536513e514e77fc83391a3
-J
-lib/metagascra/MainMenu.rb,d\3\d3728d2fe85a8c5f27b438396a39b1cfff2bd010
+T
+$.idea/codeStyles/codeStyleConfig.xml,d\d\dd7b3350c29c49497756c7f32c69a3bed18b1cba
+L
+.idea/dictionaries/alone.xml,3\4\341fb2050ab8a8e56273d7d70043fb24158667c6
+\
+,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
+I
+lib/metagascra/compare.rb,7\0\70d397ee27b65dcd127883ed53414069f2d9e978
+F
+lib/metagascra/Gcli.rb,3\0\306033374933b5dad506d217d507e194cf153849
