@@ -1,7 +1,8 @@
 require "nokogiri"
 require "open-uri"
 require "pry"
-require_relative "../../lib/metagascra/game"
+require_relative '../../lib/metagascra/game'
+
 class Gscrape
   def self.scrape
     doc = Nokogiri::HTML(open("https://www.metacritic.com/browse/games/score/metascore/all/all/filtered?sort=desc", "User-Agent" => "opera"))

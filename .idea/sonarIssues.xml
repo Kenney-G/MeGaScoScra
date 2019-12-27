@@ -23,7 +23,17 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/lib/metagascra/Gscrape.rb">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/lib/metagascra/MainMenu.rb">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/lib/metagascra/game.rb">
           <value>
             <set />
           </value>

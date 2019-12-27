@@ -1,6 +1,7 @@
 # require ''
 # require ''
 
+#noinspection ALL
 class Game
   attr_accessor :title, :system, :link
   @@games = []
@@ -19,4 +20,13 @@ class Game
   def self.all
     @@games
   end
+
+  def menu_switch
+    if intro?
+      MainMenu
+    else
+      intro
+    end
+  end
+
 end
